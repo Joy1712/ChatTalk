@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全域border box, 不用算padding */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/* 正式css */
+/* 全站基本設定 */
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1085px;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+h3{
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+p{
+    line-height: 24px;
+}
+
+/* 個別區塊 */
+/* navbar */
+.navbar{
+    max-width: 1085px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 139px 24px 139px;
+    align-items: center;
+}
+
+.navbar a{
+    /* display: block; */
+    background-color: #FF5D50;
+    color: white;
+    border-radius: 22px;
+    padding: 8px 32px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.navbar img{
+    max-width: 218px;
+}
+
+@media(max-width:768px){
+    .navbar{
+        padding: 24px 20px;
+    }
+    .navbar img{
+        width: 130px;
+    }
+}
+
+/* 三大平台 */
+
+.platform h2{
+    margin-bottom: 40px;
+}
+.platform h3{
+    margin-bottom: 24px;
+    white-space: nowrap;
+}
+.platform ul{
+    justify-content: space-evenly;
+    margin-bottom: 76px;    
+}
+.platform li{
+    text-align: center;
+    width: 244px;
+}
+.platform img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 24px;
+}
+.platform p{
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+/* 任何角色 情境 */
+.senario-p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    line-height: 24px;
+}
+.senario h4{
+    color: #56C4C5;
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    margin: 16px;
+}
+.senario ul{ 
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.senario li{
+    margin: 0 auto;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+.senario p{
+    text-align: center;
+    line-height: 24px;
+}
+.senario img{
+    width: 260px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+/* feature特色區塊 */
+
+.feature{
+    display: flex; 
+    margin-bottom: 76px;
+} 
+
+@media(max-width:768px){
+    .feature{
+        flex-direction: column-reverse;
+    }
+} 
+
+.featureList{
+    max-width: 507px;
+}
+
+.featureList h5{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    margin: 24px 0px 16px 0px;    
+}
+
+.featureList ul{
+    justify-content: space-between;
+} 
+.featureList li{
+    width: 230px;
+    padding: 32px 32px 48px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+
+@media(max-width:768px){
+    .featureList li{
+        margin: 0 auto; 
+        margin-bottom: 24px;
+    }
+
+}
+
+.featureTxt{
+    padding-left: 137px;
+}
+.featureTxt h2{
+    padding-top: 165px;
+    text-align: left;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+.btn{
+    display: block;
+    background-color: #56C4C5 ;
+    font-size: 18px;
+    color: white;
+    border-radius: 27px;
+    width: 136px;
+    padding: 12px 32px; 
+    text-align: center;
+    line-height: 26px;
+    margin-top: 24px;
+}
+@media(max-width:768px){
+    .featureTxt{
+        padding:0px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .featureTxt h2{
+        padding-top: 0px ;
+        text-align: center;
+    }
+    .featureTxt a{
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
+}
+
+
+/* 好評如潮 */
+
+.comment{
+    margin-bottom: 100px;
+}
+.comment ul{
+    margin-top: 100px;
+}
+
+.feedbackCard{
+    width: 352px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 48px 32px 24px 32px;
+    position: relative;
+}
+.feedbackCard .user{
+    width: 80px;
+    height: 80px;
+    /* 絕對位置 */
+    position: absolute;
+    bottom: 224px;
+    /* 圖片裁成圓形 */
+    border-radius:50%; 
+}
+.commentText{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.comment h6{
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.starRate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star img{
+    height:16px;
+}
+
+/* 輪播 */
+
+/* footer */
+
+
+
+.footer .container{
+    padding-top: 260px;
+    text-align: center;
+}
+.footer .btn{
+    margin: 0 auto;
+    margin-top: 48px;
+}
+.footer{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 503px;
+}
+
+@media (max-width:768px) {
+    .footer h2{
+        font-size: 24px;
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-family: Noto Sans TC;
+    padding: 16px;
+    background-color: #F5F5F5;
+}
+
