@@ -85,6 +85,7 @@ ul{
 }
 p{
     line-height: 24px;
+    font-family: Noto Sans TC;
 }
 
 /* 個別區塊 */
@@ -117,6 +118,50 @@ p{
     }
     .navbar img{
         width: 130px;
+    }
+}
+/* 首頁content BN區塊 */
+
+.content{
+    max-width: 1085px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 217px;
+}
+
+.contentTxt h1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #56C4C5;
+    line-height: 26px ;
+    font-family: Noto Sans TC; 
+}
+.contentstyle1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px ;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.contentStyle2{
+    font-size: 20px;
+    line-height: 29px ;
+}
+
+.content img{
+    max-width: 50%;
+    margin: 0 auto;
+}
+@media (max-width:768px){
+    .content img{
+        max-width: 100%; 
+    }
+    .contentTxt{
+        margin: 20px;
+    }
+    .content{
+        margin-bottom: 60px;
     }
 }
 
