@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 全域border box, 不用算padding */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/* 正式css */
+/* 全站基本設定 */
+
+/* 背景 */
+.wrap{
+	max-width: 1366px;
+    margin: 0 auto;
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg");
+	background-repeat: no-repeat;
+	background-position: top right ;
+}
+
+/* 置中 */
+.container{
+    max-width: 1085px;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 24px;
+    font-family: Noto Sans TC;
+}
+h2{
+    font-family: Noto Sans TC;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+a{
+	display: block;
+	text-decoration: none ;
+}
+
+/* 個別區塊設定 */
+/* navbar */
+
+.navbar{
+	max-width: 1088px;
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0px;
+}
+
+.navbar img{
+	max-width: 218px;
+}
+
+.button-program{
+	color: white;
+	padding: 8px 32px;
+	border-radius: 22px;
+	background-color: #FF5D50;
+	text-align: center;
+    line-height: 24px;
+}
+
+h1{
+	font-family: Noto Sans TC;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 70px;
+}
+
+.titletext{
+	margin-top: 92px;
+	margin-bottom: 180px;
+}
+
+
+
+/* 方案的選擇區塊 */
+.container-909{
+    max-width: 909px;
+    margin: 0 auto;
+}
+
+.program h2{
+	margin-top: 100px;
+	margin-bottom: 48px;
+}
+
+.option ul{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 64px;
+	margin-left: 89px;
+	margin-right: 89px;
+}
+
+.button-options{
+	font-family: Comfortaa;
+	color: #56C4C5;
+	padding:12px 32px;
+	border: 1px solid;
+	border-radius: 27px;
+}
